@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="560" viewBox="0 0 480 560" role="img" aria-labelledby="title desc">
+  <title id="title">Anonymous profile icon</title>
+  <desc id="desc">A neutral gray head and shoulders silhouette on a light ivory gray background.</desc>
+  <rect width="480" height="560" fill="#eeede8"/>
+  <circle cx="240" cy="262" r="168" fill="#e2e1dd"/>
+  <circle cx="240" cy="210" r="70" fill="#a4a5a1"/>
+  <path d="M106 410v-24c0-59 49-101 134-101s134 42 134 101v24c-36 29-81 44-134 44s-98-15-134-44Z" fill="#a4a5a1"/>
+</svg>

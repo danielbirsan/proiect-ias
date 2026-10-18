@@ -273,17 +273,19 @@ h3 { font-size: 20px; line-height: 1.3; letter-spacing: -.035em; }
 .project-accordions details p:last-child { margin-bottom: 0; }
 .team-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; }
 .team-art { height: 217px; border-radius: 12px; overflow: hidden; position: relative; display: grid; place-items: center; }
+.team-art > img { width: 100%; height: 100%; object-fit: cover; }
 .team-art > span { font-family: Georgia, serif; font-style: italic; font-size: 110px; z-index: 1; transform: rotate(-7deg); opacity: .85; }
 .team-art > i { position: absolute; width: 175px; height: 175px; border: 1px solid currentColor; border-radius: 50%; opacity: .2; right: -50px; bottom: -50px; }
 .team-art > i::after { content: ""; position: absolute; inset: 20px; border: 1px solid currentColor; border-radius: 50%; }
 .team-doodle { position: absolute; left: 20px; top: 20px; width: 26px; height: 26px; opacity: .6; transform: rotate(-12deg); stroke-width: 1.2; }
 .team-daniel { background: #e3e8d8; color: #718664; }
 .team-stefania { background: #f0dfd4; color: #b97a5c; }
-.team-daelia { background: #e9e1ed; color: #9a7ca9; }
+.team-delia { background: #e9e1ed; color: #9a7ca9; }
 .team-ioana { background: #eae6cf; color: #a59b58; }
-.team-meta { margin-top: 15px; display: flex; align-items: baseline; justify-content: space-between; gap: 6px; }
+.team-meta { margin-top: 15px; }
 .team-meta h3 { font-size: 17px; }
-.team-meta > span { font-size: 8px; color: #5c6753; }
+.team-meta > span { display: block; margin-top: 4px; font-size: 10px; color: #5c6753; }
+.team-email { display: block; width: fit-content; margin-top: 8px; font-size: 10px; color: var(--muted); overflow-wrap: anywhere; }
 .closing-section { background: #e7ebdd; overflow: hidden; border-block: 1px solid #dce2cf; }
 .closing-inner { position: relative; padding-block: 65px; display: grid; grid-template-columns: 1fr 1fr; align-items: center; }
 .closing-inner .eyebrow { color: #5c6753; margin-bottom: 19px; }
