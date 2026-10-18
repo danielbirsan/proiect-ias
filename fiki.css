@@ -1,0 +1,353 @@
+/* Project brief: shared FirstFlat identity, dedicated editorial layout. */
+.fiki-page { --brief-muted: #60695c; }
+.fiki-page .nav-links > [aria-current="page"] { color: var(--orange-hover); }
+.fiki-page .nav-links > .button { color: white; }
+.fiki-reading-track { height: 2px; background: transparent; position: absolute; bottom: -1px; left: 0; width: 100%; }
+.fiki-reading-track > span { display: block; width: 0; height: 100%; background: var(--orange); }
+.fiki-hero { display: grid; grid-template-columns: 1.2fr .8fr; gap: 78px; align-items: center; padding-block: 68px 72px; }
+.fiki-hero-copy > .eyebrow { display: flex; align-items: center; gap: 9px; color: var(--brief-muted); font-size: 10px; }
+.fiki-hero h1 { font-size: clamp(48px, 5.25vw, 72px); margin-top: 24px; line-height: 1.12; }
+.fiki-hero-lead { font-size: 15px; line-height: 1.85; color: var(--brief-muted); margin-top: 25px; max-width: 430px; }
+.fiki-hero-lead strong { font-size: 16px; color: var(--ink); font-weight: 550; }
+.fiki-hero-actions { display: flex; align-items: center; gap: 25px; margin-top: 29px; }
+.fiki-hero-actions .button { font-size: 12px; }
+.fiki-hero-actions .text-link { font-size: 11px; gap: 7px; }
+.fiki-hero-actions .text-link .icon { width: 17px; height: 17px; }
+[data-print-brief] { display: none; }
+.fiki-enhanced [data-print-brief] { display: inline-flex; }
+.fiki-hero-note { font-size: 11px; color: var(--brief-muted); margin-top: 20px; }
+.fiki-passport { position: relative; border: 1px solid #cdd6bc; background: #e9edde; padding: 23px 27px 19px; border-radius: 16px; transform: rotate(2deg); box-shadow: 10px 12px 0 #e9e5db; }
+.passport-top { display: flex; align-items: center; gap: 8px; font-size: 7px; font-weight: 600; letter-spacing: .08em; color: #58694e; padding-bottom: 16px; border-bottom: 1px solid #cfd9be; }
+.passport-top > .icon { width: 17px; height: 17px; }
+.passport-mark { margin-left: auto; font-size: 7px; white-space: nowrap; }
+.passport-home { max-width: 280px; margin: 6px auto -3px; }
+.passport-home svg { width: 100%; height: auto; }
+.fiki-passport h2 { font-size: 28px; letter-spacing: -.04em; text-align: center; line-height: 1.15; }
+.passport-tags { display: flex; justify-content: center; gap: 12px; margin-block: 18px 22px; }
+.passport-tags > span { display: inline-flex; align-items: center; gap: 4px; font-size: 8px; color: #53694b; }
+.passport-tags .icon { width: 11px; height: 11px; }
+.passport-bottom { display: flex; justify-content: space-between; align-items: center; gap: 8px; border-top: 1px dashed #c6cfb4; padding-top: 15px; font-size: 6px; color: #566747; letter-spacing: .08em; }
+.passport-barcode { display: block; width: 56px; height: 19px; background: repeating-linear-gradient(90deg, #819170 0 1px, transparent 1px 3px, #819170 3px 5px, transparent 5px 7px, #819170 7px 8px, transparent 8px 11px); }
+.fiki-intro-strip { border-block: 1px solid var(--line); background: #eeefe6; }
+.fiki-intro-strip > .container { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-block: 19px; }
+.fiki-intro-strip span { color: #536148; font-size: 8px; letter-spacing: .1em; font-weight: 600; }
+.fiki-intro-strip p { font-size: 11px; color: var(--brief-muted); }
+.fiki-intro-strip .text-link { font-size: 10px; padding: 0; white-space: nowrap; }
+.fiki-intro-strip .icon { width: 15px; height: 15px; }
+.fiki-layout { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 65px; align-items: start; padding-block: 65px 70px; }
+.fiki-sidebar { position: sticky; top: 125px; }
+.fiki-sidebar .eyebrow { font-size: 8px; color: var(--brief-muted); margin-bottom: 17px; }
+.fiki-toc { padding: 0; margin: 0; list-style: none; display: flex; flex-direction: column; gap: 5px; }
+.fiki-toc a { display: flex; align-items: center; gap: 13px; font-size: 11px; text-decoration: none; padding: 9px 12px; border-radius: 6px; border: 1px solid transparent; color: var(--brief-muted); transition: background .2s, color .2s; }
+.fiki-toc a > span { font-size: 8px; font-variant-numeric: tabular-nums; }
+.fiki-toc a:hover { background: #eeefe5; color: var(--ink); }
+.fiki-toc [aria-current="location"] { background: #e8edde; border-color: #dde4d0; color: #394e30; font-weight: 600; }
+.fiki-sidebar-note { padding: 22px 12px 0; margin-top: 20px; border-top: 1px solid var(--line); }
+.fiki-sidebar-note .icon { width: 21px; height: 21px; color: #7a8d68; margin-bottom: 10px; }
+.fiki-sidebar-note p { font-family: Georgia, serif; font-style: italic; font-size: 14px; line-height: 1.7; color: var(--brief-muted); max-width: 160px; }
+.fiki-content { min-width: 0; }
+.brief-section { scroll-margin-top: 120px; padding-block: 0 48px; margin-bottom: 43px; border-bottom: 1px solid var(--line); }
+.brief-section-label { display: flex; gap: 11px; align-items: center; margin-bottom: 12px; }
+.brief-section-label > span { display: grid; place-items: center; width: 27px; height: 27px; border-radius: 50%; border: 1px solid #d8ddce; font-size: 9px; color: #536448; background: #f0f2e8; }
+.brief-section-label > p { font-size: 8px; font-weight: 600; letter-spacing: .1em; color: var(--brief-muted); }
+.brief-section > h2 { font-size: 35px; margin-bottom: 19px; letter-spacing: -.045em; }
+.brief-section > p { font-size: 13px; line-height: 1.9; color: var(--brief-muted); }
+.brief-section > p + p { margin-top: 13px; }
+.brief-section > .brief-lead { font-size: 17px; color: var(--ink); line-height: 1.6; margin-bottom: 13px; letter-spacing: -.015em; }
+.brief-title-card { border: 1px solid #dde2d0; border-radius: 13px; padding: 31px; background: #eff2e8; }
+.brief-title-card > .eyebrow { display: block; color: #536448; font-size: 9px; margin-bottom: 17px; }
+.brief-title-card h3 { font-size: 35px; line-height: 1.15; margin-bottom: 20px; }
+.brief-title-card > p { font-size: 13px; color: var(--brief-muted); max-width: 570px; line-height: 1.85; }
+.brief-chip { display: inline-flex; border: 1px solid #d8deca; border-radius: 20px; padding: 4px 11px; background: #f8faf0; color: #526246; font-size: 9px; }
+.brief-title-card .brief-chip { margin-top: 23px; }
+.brief-team-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-top: 25px; }
+.brief-person { border: 1px solid #e0e3d5; border-radius: 10px; background: #fbfbf5; overflow: hidden; min-width: 0; }
+.brief-portrait { position: relative; background: #e8ebdf; }
+.brief-portrait > img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
+.brief-portrait > span { position: absolute; bottom: 8px; left: 8px; padding: 2px 5px; border: 1px solid #ffffffaa; background: #f8f7f2ed; border-radius: 4px; color: #60695c; font-size: 6px; letter-spacing: .07em; }
+.brief-person-info { padding: 15px 12px; }
+.brief-person h3 { font-size: 18px; letter-spacing: -.035em; }
+.brief-role { font-size: 11px; margin-top: 5px; color: var(--brief-muted); line-height: 1.5; }
+.brief-email { display: flex; align-items: center; gap: 5px; font-size: 10px; padding-top: 13px; margin-top: 12px; border-top: 1px solid #e4e7db; color: var(--brief-muted); overflow-wrap: anywhere; }
+.brief-email .icon { width: 12px; height: 12px; }
+.brief-section > .brief-note { font-size: 10px; margin-top: 18px; line-height: 1.8; color: var(--brief-muted); }
+.problem-cloud { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.problem-cloud > span { display: flex; align-items: center; gap: 8px; border: 1px solid #e1dfd2; border-radius: 7px; background: #f0ede3; padding: 10px 12px; font-size: 10px; color: #6b654e; }
+.problem-cloud > span:nth-child(2) { background: #ece7ef; border-color: #e2dce8; color: #6c5c77; }
+.problem-cloud > span:nth-child(3) { background: #e9eddf; border-color: #dce4d0; color: #5c6b49; }
+.problem-cloud > span:nth-child(4) { background: #f4e5db; border-color: #e9d7c8; color: #8a5b40; }
+.problem-cloud .icon { width: 16px; height: 16px; }
+.brief-quote { margin: 26px 0 0; padding: 24px 26px; font-family: Georgia, serif; font-size: 23px; line-height: 1.5; letter-spacing: -.02em; color: #9b442b; background: #f5e8dd; border-left: 3px solid #cb7555; border-radius: 0 10px 10px 0; }
+.brief-solution-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 25px; }
+.brief-solution-grid article { border: 1px solid #e1e5d6; border-radius: 11px; padding: 23px; background: #fcfcf7; }
+.brief-solution-grid .feature-icon { width: 36px; height: 36px; border-radius: 10px; margin-bottom: 17px; }
+.brief-solution-grid .icon { width: 18px; height: 18px; }
+.brief-solution-grid h3 { font-size: 18px; margin-bottom: 9px; }
+.brief-solution-grid p { font-size: 12px; color: var(--brief-muted); line-height: 1.85; }
+.brief-future { display: flex; align-items: center; gap: 17px; padding: 18px 20px; background: #eeefe6; border-radius: 9px; margin-top: 15px; }
+.brief-future > .brief-chip { font-size: 7px; white-space: nowrap; flex-shrink: 0; }
+.brief-future p { font-size: 11px; color: var(--brief-muted); line-height: 1.85; }
+.brief-section > .brief-takeaway { margin-top: 24px; font-size: 16px; line-height: 1.7; color: var(--ink); }
+.brief-takeaway strong { font-weight: 600; }
+.brief-segments { display: flex; flex-direction: column; gap: 12px; margin-top: 25px; }
+.brief-segments article { display: flex; align-items: center; gap: 22px; padding: 22px; border: 1px solid #e0e4d4; background: #f1f3ea; border-radius: 10px; }
+.segment-label { display: grid; place-items: center; min-width: 61px; min-height: 45px; padding: 8px; border: 1px solid #d2dcc1; border-radius: 7px; color: #526540; background: #e5ebd9; font-size: 11px; font-weight: 600; }
+.brief-segments article:nth-child(2) { background: #f5ede4; border-color: #e8ddcd; }
+.brief-segments article:nth-child(2) .segment-label { background: #eddfcb; color: #805a35; border-color: #dfcbb1; }
+.brief-segments article:nth-child(3) { background: #efebf3; border-color: #e1dbe7; }
+.brief-segments article:nth-child(3) .segment-label { background: #e5deec; color: #6c537d; border-color: #d5c9df; }
+.brief-segments h3 { font-size: 17px; margin-bottom: 7px; }
+.brief-segments p { font-size: 12px; color: var(--brief-muted); line-height: 1.8; }
+.brief-segments article > .icon { color: #8f9c80; margin-left: auto; width: 25px; height: 25px; }
+.brief-competition-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 25px; }
+.brief-competition-grid article { border: 1px solid #dee3d1; background: #f1f3e8; padding: 24px; border-radius: 11px; }
+.brief-competition-grid article:nth-child(2) { background: #f1eee5; border-color: #e4e0d4; }
+.brief-competition-grid .eyebrow { font-size: 8px; color: var(--brief-muted); margin-bottom: 14px; }
+.brief-competition-grid h3 { font-size: 20px; margin-bottom: 19px; }
+.brief-competition-grid article > p:last-child { font-size: 11px; color: var(--brief-muted); margin-top: 17px; line-height: 1.8; }
+.competitor-links { display: flex; flex-wrap: wrap; gap: 7px; }
+.competitor-links a { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; padding: 7px 9px; border: 1px solid #d9dfcc; background: #fafbf5; border-radius: 5px; text-decoration: none; }
+.competitor-links a:hover { border-color: #71855e; }
+.competitor-links .icon { width: 12px; height: 12px; }
+.brief-list { padding-left: 17px; }
+.brief-list li { font-size: 12px; color: var(--brief-muted); margin-bottom: 9px; }
+.brief-quote-green { color: #4d6240; background: #eaf0df; border-color: #7e9565; margin-top: 0; }
+.brief-advantages { display: flex; flex-direction: column; padding: 0; list-style: none; margin: 24px 0 0; }
+.brief-advantages li { display: flex; align-items: flex-start; gap: 20px; padding-block: 17px; border-bottom: 1px solid var(--line); margin: 0; }
+.brief-advantages li:last-child { border-bottom: 0; }
+.brief-advantages li > span { color: #607051; font-size: 10px; padding-top: 4px; }
+.brief-advantages h3 { font-size: 17px; margin-bottom: 7px; }
+.brief-advantages p { font-size: 12px; color: var(--brief-muted); line-height: 1.8; }
+.brief-metrics-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 25px; }
+.brief-metrics-grid article { border: 1px solid #e0e4d4; background: #fbfcf5; border-radius: 10px; padding: 22px; }
+.brief-metrics-grid article > span { font-size: 8px; color: #5c6b4e; letter-spacing: .07em; }
+.brief-metrics-grid h3 { font-size: 18px; margin-block: 12px 10px; }
+.brief-metrics-grid p { font-size: 12px; color: var(--brief-muted); line-height: 1.8; }
+.brief-costs { margin: 24px 0; padding: 0; list-style: none; }
+.brief-costs li { display: flex; align-items: flex-start; gap: 17px; padding: 17px 0; border-bottom: 1px solid var(--line); margin: 0; }
+.brief-costs li:first-child { border-top: 1px solid var(--line); }
+.brief-costs li > span { display: grid; place-items: center; width: 29px; height: 29px; flex-shrink: 0; background: #eeefe5; border: 1px solid #dee3d0; border-radius: 7px; font-size: 9px; color: #607051; }
+.brief-costs h3 { font-size: 16px; margin-bottom: 4px; }
+.brief-costs p { font-size: 12px; color: var(--brief-muted); line-height: 1.8; }
+.brief-business-note { display: flex; align-items: flex-start; gap: 15px; padding: 20px; border: 1px solid #dde4cf; background: #edf2e3; border-radius: 9px; }
+.brief-business-note .icon { width: 21px; height: 21px; color: #788f60; }
+.brief-business-note p { font-size: 12px; color: #526148; line-height: 1.8; }
+.brief-business-note strong { font-weight: 600; }
+.brief-table-wrap { border: 1px solid #dce1cf; border-radius: 11px; overflow-x: auto; margin-top: 25px; background: #fdfcf7; }
+.brief-revenue-table { border-collapse: collapse; width: 100%; text-align: left; }
+.brief-revenue-table caption { text-align: left; padding: 15px 20px; color: #55664a; background: #e8eddf; font-size: 10px; letter-spacing: .08em; text-transform: uppercase; font-weight: 600; }
+.brief-revenue-table th, .brief-revenue-table td { padding: 16px 20px; border-bottom: 1px solid #e3e7d8; font-size: 12px; line-height: 1.8; vertical-align: top; }
+.brief-revenue-table thead th { background: #f1f4e9; font-weight: 600; }
+.brief-revenue-table tbody th { width: 32%; font-weight: 550; }
+.brief-revenue-table td { color: var(--brief-muted); }
+.brief-revenue-table tbody tr:last-child > * { border-bottom: 0; }
+.brief-section > .text-link { margin-top: 17px; font-size: 12px; }
+.brief-vision { position: relative; padding: 40px; border-radius: 15px; background: #e6ecda; border: 1px solid #d4ddc6; overflow: hidden; }
+.brief-vision > .eyebrow { color: #536747; font-size: 8px; margin-bottom: 20px; }
+.vision-symbol { position: absolute; right: 28px; top: 28px; width: 39px; height: 39px; color: #8e9e7d; fill: none; stroke: currentColor; stroke-width: 1.1; stroke-linecap: round; stroke-linejoin: round; }
+.brief-vision h2 { font-size: 36px; line-height: 1.15; margin-bottom: 23px; }
+.brief-vision > p:not(.eyebrow) { font-size: 13px; color: #526148; line-height: 1.85; margin-bottom: 13px; max-width: 620px; }
+.vision-statement { border-top: 1px solid #cfd9bd; padding-top: 22px; margin-top: 24px; font-size: 13px; line-height: 1.9; color: #425936; }
+.vision-statement strong { font-weight: 600; }
+.brief-vision .button { margin-top: 26px; font-size: 12px; }
+.fiki-page .site-footer { border-top: 1px solid var(--line); }
+@media (max-width: 1100px) {
+  .fiki-hero { gap: 44px; }
+  .fiki-layout { grid-template-columns: 180px minmax(0, 1fr); gap: 40px; }
+  .fiki-toc a { font-size: 10px; padding-inline: 9px; gap: 10px; }
+  .brief-team-grid { grid-template-columns: 1fr 1fr; gap: 18px; }
+  .brief-portrait > img { aspect-ratio: 6 / 5; object-position: center 32%; }
+  .brief-person-info { padding: 16px 18px; }
+  .brief-person h3 { font-size: 20px; }
+  .brief-role { font-size: 11px; }
+  .brief-email { font-size: 10px; }
+  .fiki-passport { padding-inline: 22px; }
+  .passport-top { font-size: 6px; }
+  .brief-future { display: block; }
+  .brief-future p { margin-top: 12px; }
+}
+@media (max-width: 900px) {
+  .fiki-hero { gap: 32px; padding-block: 50px 55px; }
+  .fiki-hero h1 { font-size: 49px; }
+  .fiki-hero-lead { font-size: 13px; }
+  .fiki-hero-lead strong { font-size: 14px; }
+  .fiki-hero-actions { gap: 18px; flex-wrap: wrap; }
+  .fiki-hero-actions .button { padding-inline: 16px; font-size: 11px; }
+  .fiki-passport { padding: 19px; }
+  .fiki-passport h2 { font-size: 23px; }
+  .passport-tags { flex-wrap: wrap; gap: 7px 11px; }
+  .passport-tags > span { font-size: 7px; }
+  .passport-bottom > span:first-child { max-width: 130px; }
+  .fiki-intro-strip p { display: none; }
+  .fiki-layout { gap: 30px; grid-template-columns: 160px minmax(0, 1fr); padding-block: 48px 55px; }
+  .fiki-sidebar { top: 104px; }
+  .fiki-toc a { padding-block: 9px; font-size: 9px; }
+  .brief-section { padding-bottom: 37px; margin-bottom: 35px; scroll-margin-top: 100px; }
+  .brief-section > h2 { font-size: 31px; }
+  .brief-section > .brief-lead { font-size: 16px; }
+  .brief-title-card { padding: 25px; }
+  .brief-title-card h3 { font-size: 29px; }
+  .brief-section > p, .brief-title-card > p { font-size: 12px; }
+  .brief-person-info { padding-inline: 13px; }
+  .brief-role { font-size: 10px; }
+  .brief-email { font-size: 9px; }
+  .brief-quote { font-size: 21px; padding: 22px; }
+  .brief-solution-grid { gap: 12px; }
+  .brief-solution-grid article { padding: 20px 18px; }
+  .brief-solution-grid h3 { font-size: 16px; }
+  .brief-solution-grid p { font-size: 11px; }
+  .brief-segments article { padding: 18px; gap: 15px; }
+  .brief-segments h3 { font-size: 16px; }
+  .brief-segments p { font-size: 11px; }
+  .brief-segments article > .icon { display: none; }
+  .segment-label { min-width: 51px; font-size: 9px; }
+  .brief-competition-grid { grid-template-columns: 1fr; }
+  .brief-metrics-grid article { padding: 20px 18px; }
+  .brief-metrics-grid h3 { font-size: 16px; }
+  .brief-metrics-grid p { font-size: 11px; }
+  .brief-vision { padding: 29px; }
+  .brief-vision h2 { font-size: 30px; }
+  .brief-vision .eyebrow { max-width: 230px; }
+  .vision-symbol { width: 28px; height: 28px; right: 20px; top: 24px; }
+}
+@media (max-width: 700px) {
+  .fiki-hero { grid-template-columns: 1fr; gap: 36px; padding-block: 36px 48px; }
+  .fiki-hero-copy > .eyebrow { font-size: 8px; }
+  .fiki-hero h1 { font-size: clamp(46px, 9.8vw, 65px); margin-top: 21px; }
+  .fiki-hero-lead { font-size: 14px; margin-top: 22px; }
+  .fiki-hero-lead strong { font-size: 15px; }
+  .fiki-hero-actions { gap: 22px; }
+  .fiki-hero-note { font-size: 10px; }
+  .fiki-passport { width: min(100% - 12px, 380px); justify-self: center; padding: 21px 24px; }
+  .passport-top { font-size: 7px; }
+  .fiki-passport h2 { font-size: 27px; }
+  .passport-tags > span { font-size: 8px; }
+  .passport-bottom > span:first-child { max-width: none; }
+  .fiki-intro-strip > .container { gap: 15px; padding-block: 16px; }
+  .fiki-intro-strip span { font-size: 7px; }
+  .fiki-intro-strip .text-link { font-size: 9px; gap: 8px; }
+  .fiki-layout { grid-template-columns: 1fr; gap: 38px; padding-block: 36px 40px; }
+  .fiki-sidebar { position: static; padding: 19px; background: #eeefe6; border: 1px solid #dee4d1; border-radius: 11px; }
+  .fiki-sidebar .eyebrow { font-size: 8px; margin-bottom: 11px; }
+  .fiki-toc { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 7px; }
+  .fiki-toc a { font-size: 10px; padding: 8px 6px; gap: 8px; }
+  .fiki-toc a > span { font-size: 8px; }
+  .fiki-sidebar-note { display: none; }
+  .brief-section { margin-bottom: 33px; padding-bottom: 33px; scroll-margin-top: 93px; }
+  .brief-section-label { margin-bottom: 12px; }
+  .brief-section > h2 { font-size: 32px; margin-bottom: 18px; }
+  .brief-section > p { font-size: 13px; }
+  .brief-section > .brief-lead { font-size: 17px; }
+  .brief-title-card { padding: 25px 23px; }
+  .brief-title-card h3 { font-size: 32px; }
+  .brief-title-card > p { font-size: 13px; }
+  .brief-team-grid { gap: 17px 12px; }
+  .brief-portrait > img { aspect-ratio: 4 / 5; object-position: center; }
+  .brief-person-info { padding: 14px 12px; }
+  .brief-person h3 { font-size: 20px; }
+  .brief-role { font-size: 10px; }
+  .brief-email { font-size: 10px; gap: 4px; }
+  .brief-email .icon { width: 11px; height: 11px; }
+  .brief-portrait > span { font-size: 5px; }
+  .brief-section > .brief-note { font-size: 10px; }
+  .problem-cloud { gap: 8px; }
+  .problem-cloud > span { font-size: 10px; padding: 9px 10px; }
+  .brief-quote { font-size: 22px; padding: 21px 22px; }
+  .brief-solution-grid { grid-template-columns: 1fr; gap: 12px; }
+  .brief-solution-grid article { padding: 23px; }
+  .brief-solution-grid h3 { font-size: 20px; }
+  .brief-solution-grid p { font-size: 13px; }
+  .brief-solution-grid .feature-icon { margin-bottom: 16px; }
+  .brief-future { padding: 19px 21px; }
+  .brief-future p { font-size: 12px; }
+  .brief-section > .brief-takeaway { font-size: 16px; }
+  .brief-segments article { padding: 20px 17px; gap: 14px; }
+  .brief-segments h3 { font-size: 17px; }
+  .brief-segments p { font-size: 12px; }
+  .segment-label { min-width: 51px; font-size: 9px; }
+  .brief-competition-grid { grid-template-columns: 1fr; }
+  .brief-competition-grid article { padding: 23px; }
+  .brief-competition-grid h3 { font-size: 21px; }
+  .brief-competition-grid article > p:last-child { font-size: 12px; }
+  .brief-list li { font-size: 13px; }
+  .brief-advantages h3 { font-size: 18px; }
+  .brief-advantages p { font-size: 13px; }
+  .brief-advantages li { gap: 15px; }
+  .brief-metrics-grid { gap: 12px; }
+  .brief-metrics-grid article { padding: 18px 16px; }
+  .brief-metrics-grid article > span { font-size: 7px; }
+  .brief-metrics-grid h3 { font-size: 17px; }
+  .brief-metrics-grid p { font-size: 12px; }
+  .brief-costs h3 { font-size: 17px; }
+  .brief-costs p { font-size: 12px; }
+  .brief-business-note { padding: 18px; gap: 12px; }
+  .brief-business-note p { font-size: 12px; }
+  .brief-revenue-table th, .brief-revenue-table td { font-size: 11px; padding: 13px; }
+  .brief-revenue-table tbody th { width: 37%; }
+  .brief-revenue-table caption { padding: 14px 13px; font-size: 9px; }
+  .brief-vision { padding: 27px 23px; }
+  .brief-vision > .eyebrow { font-size: 7px; max-width: 230px; }
+  .brief-vision h2 { font-size: 31px; }
+  .brief-vision > p:not(.eyebrow) { font-size: 13px; }
+  .vision-symbol { width: 24px; height: 24px; right: 17px; top: 22px; }
+  .vision-statement { font-size: 12px; }
+  .brief-vision .button { font-size: 11px; }
+  .fiki-page:not(.fiki-enhanced) .nav { height: auto; min-height: 73px; flex-wrap: wrap; }
+  .fiki-page:not(.fiki-enhanced) .menu-toggle { display: none; }
+  .fiki-page:not(.fiki-enhanced) .nav-links { display: flex; position: static; width: 100%; border: 0; padding-inline: 0; box-shadow: none; }
+}
+@media (max-width: 375px) {
+  .fiki-hero h1 { font-size: 43px; }
+  .fiki-hero-actions { gap: 15px; }
+  .fiki-hero-actions .button { font-size: 10px; padding-inline: 13px; gap: 12px; }
+  .fiki-hero-actions .text-link { font-size: 10px; }
+  .fiki-intro-strip span { font-size: 6px; }
+  .fiki-intro-strip .text-link { font-size: 8px; }
+  .fiki-sidebar { padding: 15px 12px; }
+  .fiki-toc a { font-size: 9px; gap: 7px; }
+  .brief-title-card h3 { font-size: 28px; }
+  .brief-person-info { padding: 13px 10px; }
+  .brief-person h3 { font-size: 19px; }
+  .brief-role { font-size: 11px; }
+  .brief-email { font-size: 9px; }
+  .brief-metrics-grid { grid-template-columns: 1fr; }
+  .brief-metrics-grid h3 { font-size: 20px; }
+  .brief-metrics-grid p { font-size: 13px; }
+  .brief-revenue-table th, .brief-revenue-table td { font-size: 10px; padding-inline: 10px; }
+  .brief-vision h2 { font-size: 28px; }
+}
+@media print {
+  @page { size: A4; margin: 15mm; }
+  html { scroll-behavior: auto; }
+  .fiki-page { background: #fff; color: #17231b; font-size: 10pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .fiki-page .container { width: 100%; max-width: none; }
+  .fiki-page .site-header, .fiki-sidebar, .fiki-hero-actions, .fiki-intro-strip, .fiki-hero-note, .fiki-page .site-footer, .fiki-passport, .brief-vision .button, .brief-section > .text-link, .skip-link { display: none !important; }
+  .fiki-hero { display: block; padding: 0 0 9mm; border-bottom: 1px solid #cfd5c5; margin-bottom: 8mm; }
+  .fiki-hero h1 { font-size: 33pt; margin-top: 4mm; }
+  .fiki-hero-lead { max-width: none; font-size: 10pt; margin-top: 4mm; }
+  .fiki-hero-lead strong { font-size: 11pt; }
+  .fiki-layout { display: block; padding: 0; }
+  .brief-section { margin-bottom: 8mm; padding-bottom: 7mm; scroll-margin-top: 0; }
+  .brief-section > h2 { font-size: 22pt; break-after: avoid; }
+  .brief-section-label { break-after: avoid; }
+  .brief-section > p { font-size: 10pt; }
+  .brief-section > .brief-lead { font-size: 12pt; }
+  .brief-title-card { padding: 6mm; break-inside: avoid; }
+  .brief-title-card h3 { font-size: 23pt; }
+  .brief-team-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 3mm; }
+  .brief-portrait > img { aspect-ratio: 5 / 4; object-position: center 30%; }
+  .brief-person-info { padding: 3mm; }
+  .brief-person h3 { font-size: 13pt; }
+  .brief-role { font-size: 7pt; }
+  .brief-email { font-size: 6pt; }
+  .brief-person, .brief-solution-grid article, .brief-competition-grid article, .brief-metrics-grid article, .brief-segments article, .brief-quote, .brief-business-note, .brief-costs li, .brief-advantages li, .brief-revenue-table tr { break-inside: avoid; }
+  .brief-solution-grid, .brief-metrics-grid, .brief-competition-grid { grid-template-columns: 1fr 1fr; }
+  .brief-quote { font-size: 16pt; }
+  .brief-vision { padding: 7mm; break-inside: avoid; }
+  .brief-vision h2 { font-size: 23pt; }
+  .brief-table-wrap { overflow: visible; }
+  .brief-revenue-table thead { display: table-header-group; }
+  .fiki-page a { text-decoration: none; }
+  .brief-vision .vision-symbol { display: none; }
+  p, li { orphans: 3; widows: 3; }
+}
