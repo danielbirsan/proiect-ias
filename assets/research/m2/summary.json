@@ -1,0 +1,460 @@
+{
+  "source_sha256": "d04c8c01dc6537b5c2293a47a792627bce5520bc506dd558b1eebccb77d595d9",
+  "method": "Small, self-selected exploratory sample; not representative. Primary role determines routing. Tenant rows with owner-branch answers are excluded from owner analysis. Empty answers are missing, not No. Each percentage uses nonempty answers to its question within the stated cohort. Multiple-choice options are split on commas; shares can exceed 100% in total. Percentages rounded to nearest five percentage points, half up. No respondent records or timestamps are published. No causal or willingness-to-pay inference.",
+  "metrics": [
+    {
+      "id": "unclear_cost_responsibility",
+      "question_column": 11,
+      "cohort": "tenants",
+      "percent_approx": 80
+    },
+    {
+      "id": "contract_only_at_signing",
+      "question_column": 10,
+      "cohort": "tenants",
+      "percent_approx": 80
+    },
+    {
+      "id": "repair_later_reported_not_theirs",
+      "question_column": 13,
+      "cohort": "tenants",
+      "percent_approx": 70
+    },
+    {
+      "id": "memory_for_bills",
+      "question_column": 15,
+      "cohort": "tenants",
+      "percent_approx": 65
+    },
+    {
+      "id": "deposit_withheld",
+      "question_column": 7,
+      "cohort": "tenants",
+      "percent_approx": 40
+    },
+    {
+      "id": "no_listed_bill_incident",
+      "question_column": 17,
+      "cohort": "tenants",
+      "percent_approx": 25
+    }
+  ],
+  "questions": [
+    {
+      "column": 2,
+      "question": "Care din aceste situații vi se potrivește?",
+      "cohort": "all",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "single_choice",
+      "distribution_percent_approx": {
+        "Chiriaș": 65,
+        "Proprietar": 35
+      }
+    },
+    {
+      "column": 3,
+      "question": "De câte ori te-ai mutat într-o locuință închiriată în ultimii 5 ani?",
+      "cohort": "tenants",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "single_choice",
+      "distribution_percent_approx": {
+        "1.0": 25,
+        "2-3": 50,
+        "4+": 15,
+        "Stau de mai mult de 5 ani în locuința actuală": 15
+      }
+    },
+    {
+      "column": 4,
+      "question": "Locuiești cu cineva?",
+      "cohort": "tenants",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "single_choice",
+      "distribution_percent_approx": {
+        "Cu colegi": 25,
+        "Cu partener": 25,
+        "Singur": 50
+      }
+    },
+    {
+      "column": 5,
+      "question": "Ce ai făcut pentru a documenta starea apartamentului la intrare? (alege tot ce se aplică)",
+      "cohort": "tenants",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "multiple_choice",
+      "distribution_percent_approx": {
+        "Am trimis mesaje proprietarului": 15,
+        "Listă scrisă de defecte": 5,
+        "Nimic": 15,
+        "Poze sau video": 70,
+        "Proces-verbal de predare-primire semnat": 30
+      }
+    },
+    {
+      "column": 6,
+      "question": "Dacă ai făcut poze, unde sunt acum?",
+      "cohort": "tenants",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "single_choice",
+      "distribution_percent_approx": {
+        "Cloud": 15,
+        "Le-am șters": 15,
+        "Nu mai știu": 20,
+        "Telefon": 55
+      }
+    },
+    {
+      "column": 7,
+      "question": "La ultima chirie, ți s-a reținut ceva din garanție?",
+      "cohort": "tenants",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "single_choice",
+      "distribution_percent_approx": {
+        "Da, integral": 15,
+        "Da, parțial": 25,
+        "Nu": 65
+      }
+    },
+    {
+      "column": 8,
+      "question": "Dacă da, cam cât, în lei, și pentru ce?",
+      "cohort": "tenants",
+      "has_answers": true,
+      "has_missing": true,
+      "type": "free_text"
+    },
+    {
+      "column": 9,
+      "question": "Ai avut o discuție sau o dispută cu proprietarul legată de stricăciuni?",
+      "cohort": "tenants",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "single_choice",
+      "distribution_percent_approx": {
+        "Da, rezolvată ușor": 25,
+        "Da, tensionată": 25,
+        "Nu": 50
+      }
+    },
+    {
+      "column": 10,
+      "question": "Când ai deschis ultima oară contractul de închiriere?",
+      "cohort": "tenants",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "single_choice",
+      "distribution_percent_approx": {
+        "Doar la semnare": 80,
+        "Luna aceasta": 5,
+        "Nu l-am citit niciodată": 15
+      }
+    },
+    {
+      "column": 11,
+      "question": "În ultimul an, ai avut o problemă în legătură cu diferite cheltuieli despre care nu erai sigur cine plătește?",
+      "cohort": "tenants",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "single_choice",
+      "distribution_percent_approx": {
+        "Da": 80,
+        "Nu": 20
+      }
+    },
+    {
+      "column": 12,
+      "question": "Dacă da, ce ai făcut?",
+      "cohort": "tenants",
+      "has_answers": true,
+      "has_missing": true,
+      "type": "free_text"
+    },
+    {
+      "column": 13,
+      "question": "Ai plătit vreodată o reparație despre care ai aflat ulterior că nu era responsabilitatea ta?",
+      "cohort": "tenants",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "single_choice",
+      "distribution_percent_approx": {
+        "Da": 70,
+        "Nu": 30
+      }
+    },
+    {
+      "column": 14,
+      "question": "Dacă da, cat a costat reparația? (precizează moneda)",
+      "cohort": "tenants",
+      "has_answers": true,
+      "has_missing": true,
+      "type": "free_text"
+    },
+    {
+      "column": 15,
+      "question": "Cum ții evidența facturilor și a plăților?",
+      "cohort": "tenants",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "single_choice",
+      "distribution_percent_approx": {
+        "Aplicație": 5,
+        "Excel sau Google Sheets": 5,
+        "Grup de WhatsApp cu colegii": 5,
+        "Memorie": 65,
+        "Notițe în telefon": 20
+      }
+    },
+    {
+      "column": 16,
+      "question": "Dacă ții evidența pe o aplicație, cum se numește?",
+      "cohort": "tenants",
+      "has_answers": false,
+      "has_missing": true,
+      "type": "free_text"
+    },
+    {
+      "column": 17,
+      "question": "În ultimele 12 luni, ți s-a întâmplat să: (alege tot ce se aplică)",
+      "cohort": "tenants",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "multiple_choice",
+      "distribution_percent_approx": {
+        "Ai o dispută cu colegii sau proprietarul despre cine a plătit ce": 30,
+        "Nimic din cele de mai sus": 25,
+        "Nu poți demonstra că ai plătit": 25,
+        "Plătești o factură de două ori": 15,
+        "Primești o factură neașteptat de mare": 40,
+        "Uiți o scadență": 25
+      }
+    },
+    {
+      "column": 18,
+      "question": "Ai încercat vreodată un instrument sau o aplicație pentru evidență? Dacă da, care și de ce nu mai folosești?",
+      "cohort": "tenants",
+      "has_answers": false,
+      "has_missing": true,
+      "type": "free_text"
+    },
+    {
+      "column": 19,
+      "question": "Care dintre situațiile de mai jos vi se potrivește cel mai bine?",
+      "cohort": "owners",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "single_choice",
+      "distribution_percent_approx": {
+        "Sunt proprietar și locuiesc în propria locuință; nu o închiriez": 55,
+        "Sunt proprietar și închiriez una sau mai multe locuințe către chiriași": 45
+      }
+    },
+    {
+      "column": 20,
+      "question": "Cum ții evidența plăților?",
+      "cohort": "resident_owners",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "single_choice",
+      "distribution_percent_approx": {
+        "Aplicațiile furnizorilor": 80,
+        "Excel sau Google Sheets": 20
+      }
+    },
+    {
+      "column": 21,
+      "question": "În ultimele 12 luni, ți s-a întâmplat să:",
+      "cohort": "resident_owners",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "multiple_choice",
+      "distribution_percent_approx": {
+        "Nimic din cele de mai sus": 20,
+        "Plătești de două ori": 40,
+        "Plătești penalizări": 20,
+        "Uiți o scadență": 60
+      }
+    },
+    {
+      "column": 22,
+      "question": "Dacă ai plătit penalizări sau sume în plus, cam cât în total pe an, în lei?",
+      "cohort": "resident_owners",
+      "has_answers": true,
+      "has_missing": true,
+      "type": "free_text"
+    },
+    {
+      "column": 23,
+      "question": "Cât timp pe lună petreci cu facturile (căutat, plătit, notat)?",
+      "cohort": "resident_owners",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "single_choice",
+      "distribution_percent_approx": {
+        "1-3 ore": 20,
+        "15-60 min": 80
+      }
+    },
+    {
+      "column": 24,
+      "question": "Unde sunt chitanțele și confirmările tale?",
+      "cohort": "resident_owners",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "single_choice",
+      "distribution_percent_approx": {
+        "Email": 80,
+        "Hârtie": 20
+      }
+    },
+    {
+      "column": 25,
+      "question": "Ai încercat o aplicație sau un tabel pentru facturi și ai renunțat? De ce?",
+      "cohort": "resident_owners",
+      "has_answers": true,
+      "has_missing": true,
+      "type": "free_text"
+    },
+    {
+      "column": 26,
+      "question": "Împarți costurile cu cineva? Cum?",
+      "cohort": "resident_owners",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "free_text"
+    },
+    {
+      "column": 27,
+      "question": "Plătești acum pentru vreun instrument sau serviciu legat de gestionarea banilor sau a locuinței? Daca da, ce și cât?",
+      "cohort": "resident_owners",
+      "has_answers": true,
+      "has_missing": true,
+      "type": "free_text"
+    },
+    {
+      "column": 28,
+      "question": "Câte apartamente sau camere închiriezi/administrezi?",
+      "cohort": "landlords",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "single_choice",
+      "distribution_percent_approx": {
+        "1.0": 75,
+        "2-5": 25
+      }
+    },
+    {
+      "column": 29,
+      "question": "Ce ești?",
+      "cohort": "landlords",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "single_choice",
+      "distribution_percent_approx": {
+        "Proprietar individual": 100
+      }
+    },
+    {
+      "column": 30,
+      "question": "Cum documentezi starea apartamentului la predare?",
+      "cohort": "landlords",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "single_choice",
+      "distribution_percent_approx": {
+        "Proces-verbal": 100
+      }
+    },
+    {
+      "column": 31,
+      "question": "Gândește-te la ultimul chiriaș care a plecat. Au existat dispute pentru stricăciuni?",
+      "cohort": "landlords",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "single_choice",
+      "distribution_percent_approx": {
+        "Da, dificile": 50,
+        "Da, rezolvate ușor": 50
+      }
+    },
+    {
+      "column": 32,
+      "question": "Dacă da, cam cât a costat disputa în timp (ore) și bani (lei)?",
+      "cohort": "landlords",
+      "has_answers": true,
+      "has_missing": true,
+      "type": "free_text"
+    },
+    {
+      "column": 33,
+      "question": "Cum te anunță chiriașii despre probleme?",
+      "cohort": "landlords",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "single_choice",
+      "distribution_percent_approx": {
+        "Telefon": 50,
+        "WhatsApp": 50
+      }
+    },
+    {
+      "column": 34,
+      "question": "Cum urmărești plata chiriei și a utilităților?",
+      "cohort": "landlords",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "single_choice",
+      "distribution_percent_approx": {
+        "Caiet": 25,
+        "Excel": 25,
+        "Nu urmăresc": 25,
+        "notite telefon": 25
+      }
+    },
+    {
+      "column": 35,
+      "question": "Cam câte ore pe lună petreci cu administrarea de acest tip (plăți, probleme, documente)?",
+      "cohort": "landlords",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "single_choice",
+      "distribution_percent_approx": {
+        "1-3": 50,
+        "<1": 50
+      }
+    },
+    {
+      "column": 36,
+      "question": "Folosești sau ai folosit un software sau serviciu de administrare? Dacă da, care, cât costă și de ce l-ai ales sau abandonat?",
+      "cohort": "landlords",
+      "has_answers": false,
+      "has_missing": true,
+      "type": "free_text"
+    },
+    {
+      "column": 37,
+      "question": "Cine îți scrie contractele de închiriere?",
+      "cohort": "landlords",
+      "has_answers": true,
+      "has_missing": false,
+      "type": "single_choice",
+      "distribution_percent_approx": {
+        "Agenție": 50,
+        "Eu, din șablon": 50
+      }
+    },
+    {
+      "column": 38,
+      "question": "Care e cea mai mare bătaie de cap în administrarea chiriilor?",
+      "cohort": "landlords",
+      "has_answers": true,
+      "has_missing": true,
+      "type": "free_text"
+    }
+  ]
+}
