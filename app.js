@@ -244,6 +244,7 @@
   }
   function openSetup(opener, plan = 'Free') {
     if (!dialog || !form) return;
+    window.posthog?.capture('home_setup_started');
     const mobileNavOpener = nav?.contains(opener) && menu && getComputedStyle(menu).display !== 'none';
     if (mobileNavOpener) closeMenu();
     setupOpener = mobileNavOpener ? menu : opener;
@@ -271,6 +272,7 @@
     if ($('#setup-result-copy')) $('#setup-result-copy').textContent = `Here’s a sample starting point for a ${tenure === 'tenant' ? 'tenant' : 'homeowner'} on FirstFlat ${plan}. These are suggested reminders: confirm each date from your documents, providers, and applicable requirements. No account has been created.`;
     if ($('#setup-result-list')) $('#setup-result-list').replaceChildren(...reminders.map((item) => element('li', '', item)));
     updateSetup(true);
+    window.posthog?.capture('sample_home_setup_completed');
     const title = $('#setup-result-title');
     if (title) { title.tabIndex = -1; title.focus(); }
     announce('Your sample home setup is ready. No information has been sent or stored.');
