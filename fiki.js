@@ -35,8 +35,10 @@
 
   function updateReadingPosition() {
     scheduled = false;
-    const headerOffset = (document.querySelector('.site-header')?.getBoundingClientRect().height || 90) + 60;
-    const active = sections.reduce((previous, section) => section.getBoundingClientRect().top <= headerOffset ? section : previous, sections[0]);
+    const scrollPadding = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+    const sectionMargin = sections.length ? parseFloat(getComputedStyle(sections[0]).scrollMarginTop) || 0 : 0;
+    const anchorOffset = scrollPadding + sectionMargin + 1;
+    const active = sections.reduce((previous, section) => section.getBoundingClientRect().top <= anchorOffset ? section : previous, sections[0]);
     if (active && active.id !== activeId) {
       activeId = active.id;
       links.forEach((link) => {
