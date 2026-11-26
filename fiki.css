@@ -15,7 +15,6 @@
 .fiki-hero-actions .text-link .icon { width: 17px; height: 17px; }
 [data-print-brief] { display: none; }
 .fiki-enhanced [data-print-brief] { display: inline-flex; }
-.fiki-hero-note { font-size: 11px; color: var(--brief-muted); margin-top: 20px; }
 .fiki-passport { position: relative; border: 1px solid #cdd6bc; background: #e9edde; padding: 23px 27px 19px; border-radius: 16px; transform: rotate(2deg); box-shadow: 10px 12px 0 #e9e5db; }
 .passport-top { display: flex; align-items: center; gap: 8px; font-size: 7px; font-weight: 600; letter-spacing: .08em; color: #58694e; padding-bottom: 16px; border-bottom: 1px solid #cfd9be; }
 .passport-top > .icon { width: 17px; height: 17px; }
@@ -42,10 +41,10 @@
 .fiki-toc a > span { font-size: 8px; font-variant-numeric: tabular-nums; }
 .fiki-toc a:hover { background: #eeefe5; color: var(--ink); }
 .fiki-toc [aria-current="location"] { background: #e8edde; border-color: #dde4d0; color: #394e30; font-weight: 600; }
-.fiki-sidebar-note { padding: 22px 12px 0; margin-top: 20px; border-top: 1px solid var(--line); }
-.fiki-sidebar-note .icon { width: 21px; height: 21px; color: #7a8d68; margin-bottom: 10px; }
-.fiki-sidebar-note p { font-family: Georgia, serif; font-style: italic; font-size: 14px; line-height: 1.7; color: var(--brief-muted); max-width: 160px; }
+.fiki-toc + .eyebrow { margin-top: 22px; }
 .fiki-content { min-width: 0; }
+.fiki-part-heading { margin-top: 43px; scroll-margin-top: 120px; color: #536448; font-weight: 600; font-size: 14px; }
+.fiki-part-heading + .milestone-jump-links { margin-top: 12px; }
 .brief-section { scroll-margin-top: 120px; padding-block: 0 48px; margin-bottom: 43px; border-bottom: 1px solid var(--line); }
 .brief-section-label { display: flex; gap: 11px; align-items: center; margin-bottom: 12px; }
 .brief-section-label > span { display: grid; place-items: center; width: 27px; height: 27px; border-radius: 50%; border: 1px solid #d8ddce; font-size: 9px; color: #536448; background: #f0f2e8; }
@@ -217,7 +216,6 @@
   .fiki-hero-lead { font-size: 14px; margin-top: 22px; }
   .fiki-hero-lead strong { font-size: 15px; }
   .fiki-hero-actions { gap: 22px; }
-  .fiki-hero-note { font-size: 10px; }
   .fiki-passport { width: min(100% - 12px, 380px); justify-self: center; padding: 21px 24px; }
   .passport-top { font-size: 7px; }
   .fiki-passport h2 { font-size: 27px; }
@@ -232,7 +230,6 @@
   .fiki-toc { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 7px; }
   .fiki-toc a { font-size: 10px; padding: 8px 6px; gap: 8px; }
   .fiki-toc a > span { font-size: 8px; }
-  .fiki-sidebar-note { display: none; }
   .brief-section { margin-bottom: 33px; padding-bottom: 33px; scroll-margin-top: 93px; }
   .brief-section-label { margin-bottom: 12px; }
   .brief-section > h2 { font-size: 32px; margin-bottom: 18px; }
@@ -318,14 +315,13 @@
 }
 /* Personas and early screen studies. */
 .fiki-hero-actions { flex-wrap: wrap; gap: 14px 24px; }
-.design-section > h2 { font-size: clamp(34px, 4vw, 46px); line-height: 1.15; }
-.design-section > p a { color: #536747; text-underline-offset: 3px; }
+.milestone-block > p a { color: #536747; text-underline-offset: 3px; }
 .persona-list { display: grid; gap: 23px; margin-top: 29px; }
 .persona-card { border: 1px solid #d8dfce; border-radius: 14px; background: #fcfcf7; overflow: hidden; }
 .persona-heading { display: flex; align-items: center; gap: 18px; padding: 24px 27px; background: #e9edde; border-bottom: 1px solid #d8dfce; }
 .persona-avatar { display: grid; place-items: center; flex-shrink: 0; width: 58px; height: 68px; border: 1px solid #bfcdb1; border-radius: 30px 30px 12px 12px; background: #f7f9ee; color: #526747; font-family: Georgia, serif; font-size: 31px; }
 .persona-heading .persona-role { color: #536747; font-size: 9px; letter-spacing: .09em; font-weight: 600; }
-.persona-heading h3 { font-size: 29px; line-height: 1.2; letter-spacing: -.04em; margin-block: 4px; }
+.persona-heading h4 { font-size: 29px; line-height: 1.2; letter-spacing: -.04em; margin-block: 4px; }
 .persona-heading p:last-child { font-size: 12px; line-height: 1.65; color: #53604e; }
 .persona-index { margin-left: auto; align-self: flex-start; padding-top: 4px; font-size: 9px; letter-spacing: .06em; color: #5c6b50; white-space: nowrap; }
 .persona-card:nth-child(2) { border-color: #e3d8c8; }
@@ -368,7 +364,6 @@
 .wireframe-scroll-hint { display: none; }
 .wireframe-test { margin-top: 18px; padding-left: 16px; border-left: 2px solid #c7d1b7; font-size: 12px; line-height: 1.9; color: var(--brief-muted); }
 .wireframe-test strong { color: #4e6241; }
-.design-section > .design-next-step { margin-top: 27px; padding: 20px 23px; border-radius: 10px; background: #e9edde; color: #4e6241; }
 .design-section a:focus-visible, .wireframe-canvas:focus-visible { outline: 2px solid #985037; outline-offset: 3px; }
 @media (min-width: 701px) {
   .fiki-sidebar { max-height: calc(100dvh - 145px); overflow-y: auto; scrollbar-width: thin; padding-right: 4px; }
@@ -380,7 +375,7 @@
 }
 @media (max-width: 480px) {
   .persona-heading { padding: 20px 18px; gap: 13px; }
-  .persona-heading h3 { font-size: 27px; }
+  .persona-heading h4 { font-size: 27px; }
   .persona-avatar { width: 46px; height: 58px; font-size: 27px; }
   .persona-index { font-size: 8px; }
   .persona-body { padding: 20px 18px; }
@@ -419,23 +414,23 @@
   .persona-needs .persona-wide { grid-column: auto; }
   .persona-quote { font-size: 18px; padding: 16px 18px; }
 }
-/* M2 discovery: evidence-led milestone, sharing the project brief palette. */
-.m2-section > h2 { font-size: clamp(34px, 4vw, 50px); line-height: 1.12; }
+/* Milestone navigation, shared layout, and discovery evidence. */
+.milestone-section > h2 { font-size: clamp(34px, 4vw, 50px); line-height: 1.12; }
 .m2-verdict { padding: 24px; margin-block: 22px; background: #eaf0df; border: 1px solid #d2ddc3; border-radius: 12px; }
 .m2-verdict p { margin-top: 13px; font-size: 13px; line-height: 1.85; color: #425638; }
-.m2-jump-links { display: flex; flex-wrap: wrap; gap: 8px; margin-block: 25px 34px; }
-.m2-jump-links a { font-size: 11px; line-height: 1.5; padding: 8px 12px; border: 1px solid #dce1d0; border-radius: 20px; text-decoration: none; background: #fcfcf6; }
-.m2-jump-links a:hover { background: #e8edde; }
-.m2-block { padding-top: 28px; margin-top: 28px; border-top: 1px solid var(--line); scroll-margin-top: 115px; }
-.m2-block > .eyebrow { color: #607051; font-size: 9px; margin-bottom: 12px; }
-.m2-block > h3 { font-size: clamp(25px, 2.6vw, 31px); line-height: 1.25; margin-bottom: 18px; letter-spacing: -.035em; }
-.m2-block p, .m2-block li { font-size: 13px; color: var(--brief-muted); line-height: 1.9; }
-.m2-block p + p { margin-top: 13px; }
-.m2-block > p { margin-bottom: 16px; }
+.milestone-jump-links { display: flex; flex-wrap: wrap; gap: 8px; margin-block: 25px 34px; }
+.milestone-jump-links a { font-size: 11px; line-height: 1.5; padding: 8px 12px; border: 1px solid #dce1d0; border-radius: 20px; text-decoration: none; background: #fcfcf6; }
+.milestone-jump-links a:hover { background: #e8edde; }
+.milestone-block { padding-top: 28px; margin-top: 28px; border-top: 1px solid var(--line); scroll-margin-top: 115px; }
+.milestone-block > .eyebrow { color: #607051; font-size: 9px; margin-bottom: 12px; }
+.milestone-block > h3 { font-size: clamp(25px, 2.6vw, 31px); line-height: 1.25; margin-bottom: 18px; letter-spacing: -.035em; }
+.milestone-block > p, .milestone-block :is(.m2-two-up p, .m2-process p, .m2-process li) { font-size: 13px; color: var(--brief-muted); line-height: 1.9; }
+.milestone-block p + p { margin-top: 13px; }
+.milestone-block > p { margin-bottom: 16px; }
 .m2-two-up { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-block: 22px; }
 .m2-two-up article { padding: 23px; border: 1px solid #e0e4d4; border-radius: 11px; background: #fcfcf6; }
 .m2-two-up article:nth-child(2) { background: #f2eee6; }
-.m2-block h4 { font-size: 18px; line-height: 1.4; margin-bottom: 10px; letter-spacing: -.02em; }
+.milestone-block .m2-two-up h4 { font-size: 18px; line-height: 1.4; margin-bottom: 10px; letter-spacing: -.02em; }
 .m2-process { padding-left: 22px; margin-block: 22px; }
 .m2-process > li { padding-left: 7px; margin-bottom: 20px; }
 .m2-process > li::marker { color: #946044; font-weight: 600; }
@@ -452,7 +447,8 @@
 .m2-audio { margin: 23px 0; padding: 24px; background: #eeeee5; border: 1px solid #dce1cf; border-radius: 12px; }
 .m2-audio figcaption strong { display: block; font-size: 17px; }
 .m2-audio figcaption span { display: block; margin-top: 7px; font-size: 11px; color: var(--brief-muted); line-height: 1.7; }
-.m2-audio audio, .m2-audio video { display: block; width: 100%; margin-block: 20px 15px; }
+.m2-audio audio { display: block; width: 100%; margin-block: 20px 15px; }
+.m2-audio video { display: block; width: 100%; max-height: 70vh; margin-block: 20px 15px; object-fit: contain; background: #000; border-radius: 8px; }
 .m2-audio > a { font-size: 12px; text-underline-offset: 3px; }
 .m2-details { margin-top: 12px; border: 1px solid #dce1cf; border-radius: 9px; background: #fafbf4; }
 .m2-details summary { padding: 17px 20px; cursor: pointer; font-size: 13px; font-weight: 600; line-height: 1.7; }
@@ -471,7 +467,7 @@
 .m2-evidence-status { border-top: 1px solid var(--line); padding-top: 24px; margin-top: 25px; }
 .m2-evidence-status ul { padding-left: 19px; }
 .m2-evidence-status li { margin-bottom: 10px; }
-.m2-section a:focus-visible, .m2-section summary:focus-visible { outline: 2px solid #985037; outline-offset: 4px; }
+.milestone-section a:focus-visible, .milestone-section summary:focus-visible { outline: 2px solid #985037; outline-offset: 4px; }
 @media (max-width: 900px) {
   .m2-two-up { grid-template-columns: 1fr; }
   .m2-stat { padding: 20px 17px; }
@@ -480,14 +476,14 @@
 @media (max-width: 480px) {
   .m2-stats { grid-template-columns: 1fr; }
   .m2-stat { padding: 23px; }
-  .m2-block { scroll-margin-top: 95px; }
+  .milestone-block { scroll-margin-top: 95px; }
   .m2-verdict, .m2-audio { padding: 20px; }
   .m2-details summary, .m2-details > div { padding: 16px; }
 }
 @media print {
-  .m2-jump-links, .m2-audio audio { display: none; }
-  .m2-block { scroll-margin-top: 0; }
-  .m2-block > h3 { break-after: avoid; }
+  .milestone-jump-links, .m2-audio audio, .m2-audio video { display: none; }
+  .milestone-block { scroll-margin-top: 0; }
+  .milestone-block > h3 { break-after: avoid; }
   .m2-stats, .m2-two-up { grid-template-columns: 1fr 1fr; }
   .m2-stat, .m2-two-up article, .m2-audio { break-inside: avoid; }
   .m2-stat-value { font-size: 32pt; }
@@ -497,7 +493,7 @@
   html { scroll-behavior: auto; }
   .fiki-page { background: #fff; color: #17231b; font-size: 10pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .fiki-page .container { width: 100%; max-width: none; }
-  .fiki-page .site-header, .fiki-sidebar, .fiki-hero-actions, .fiki-intro-strip, .fiki-hero-note, .fiki-page .site-footer, .fiki-passport, .brief-vision .button, .brief-section > .text-link, .skip-link { display: none !important; }
+  .fiki-page .site-header, .fiki-sidebar, .fiki-hero-actions, .fiki-intro-strip, .fiki-page .site-footer, .fiki-passport, .brief-vision .button, .brief-section > .text-link, .skip-link { display: none !important; }
   .fiki-hero { display: block; padding: 0 0 9mm; border-bottom: 1px solid #cfd5c5; margin-bottom: 8mm; }
   .fiki-hero h1 { font-size: 33pt; margin-top: 4mm; }
   .fiki-hero-lead { max-width: none; font-size: 10pt; margin-top: 4mm; }
